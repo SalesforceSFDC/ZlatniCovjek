@@ -1,0 +1,29 @@
+<apex:dataTable value="{!Object.histories}" var="history" rowClasses="odd,even" cellspacing="15" width="100%">
+            <apex:column >
+                <apex:facet name="header"></apex:facet>
+                <apex:facet name="footer"></apex:facet>
+                <apex:outputText value="{0,date,MM/dd/yyyy HH:mm }">
+                <apex:param value="{!history.createddate}" />
+                </apex:outputText>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Field</apex:facet>
+                <apex:facet name="footer"></apex:facet>
+                <b> <apex:outputText value="{!history.field}"/></b>
+                </apex:column>
+            <apex:column >
+                <apex:facet name="header">Editied By</apex:facet>
+                <apex:facet name="footer"></apex:facet>
+                <apex:outputText value="{!history.createdby.name}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Old Value</apex:facet>
+                <apex:facet name="footer"></apex:facet>
+                <apex:outputText value="{!history.oldvalue}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">New Value</apex:facet>
+                <apex:facet name="footer"></apex:facet>
+                <apex:outputText value="{!history.newvalue}"/>
+            </apex:column>
+        </apex:datatable>
