@@ -1,1 +1,3 @@
 # ZlatniCovjek
+
+* Analysis and Debugging
