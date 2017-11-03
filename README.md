@@ -47,3 +47,16 @@ h1 {
 
 ### Multiple Style Sheets
 * If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+
+```css
+// If the internal style is defined after the link to the external style sheet, the <h1> elements will be "orange":
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+h1 {
+    color: orange;
+}
+</style>
+</head>
+```
+
