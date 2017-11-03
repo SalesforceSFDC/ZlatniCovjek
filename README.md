@@ -44,3 +44,6 @@ h1 {
 ```css
 <h1 style="color:blue;margin-left:30px;">This is a heading</h1>
 ```
+
+### Multiple Style Sheets
+* If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
