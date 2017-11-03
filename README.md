@@ -60,4 +60,17 @@ h1 {
 </style>
 </head>
 ```
+```css
+/* if the internal style is defined before the link to the external style sheet, 
+the <h1> elements will be "navy": */
+<head>
+<style>
+h1 {
+    color: orange;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+Example
 ```
