@@ -8,6 +8,7 @@
 
 
 ## CSS
+
 ### External Style Sheet
 ```css
 <head>
@@ -23,4 +24,19 @@ h1 {
     color: navy;
     margin-left: 20px;
 }
+```
+### Internal Style Sheet
+```css
+<head>
+<style>
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+</style>
+</head>
 ```
