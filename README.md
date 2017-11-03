@@ -40,3 +40,7 @@ h1 {
 </style>
 </head>
 ```
+### Inline Style Sheets
+```css
+<h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+```
