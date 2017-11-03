@@ -51,6 +51,7 @@ h1 {
 ```css
 /* If the internal style is defined after the link to the external style sheet, 
 the <h1> elements will be "orange": */
+
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 <style>
@@ -63,6 +64,7 @@ h1 {
 ```css
 /* if the internal style is defined before the link to the external style sheet, 
 the <h1> elements will be "navy": */
+
 <head>
 <style>
 h1 {
@@ -71,6 +73,4 @@ h1 {
 </style>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-
-Example
 ```
