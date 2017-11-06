@@ -8,3 +8,9 @@
 * SubAccountSFID - all of the trading systems work with this object
 * SubAccount --> lookup relationship with primary account
 * OMS - order management system
+* oms source mapping
+* client object query - getClientNamefromPartyID
+* Pre_Trade_Report_Reqd__c
+* Post trade
+* name is limited to 80 characters
+* you cannot do 'LIKE' query on the text area
