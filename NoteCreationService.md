@@ -6,4 +6,4 @@
 * if orderID is unique
 * Note_Entity_Account__c = junction objection
 * SubAccountSFID - all of the trading systems work with this object
-* 
+* SubAccount --> lookup relationship with primary account
