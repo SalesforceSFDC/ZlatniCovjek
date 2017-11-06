@@ -3,4 +3,5 @@
 * Java program - native to ZC (ZlatniCovjek)
 * NoteCreationService.apxc in Dev2
 * Srilatha is coding on the Java side
-*
+* if orderID is unique
+* Note_Entity_Account__c = junction objection
