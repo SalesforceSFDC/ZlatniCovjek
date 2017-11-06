@@ -1,4 +1,4 @@
-# <i>Zlatni Covjek</i> :bank: :stock:
+# <b>Zlatni Covjek</b> :bank:
 
 ## Debugging Javascript
 * [How to display History Related lists in descending order in Visualforce?](https://developer.salesforce.com/forums/?id=906F000000096u9IAA)
