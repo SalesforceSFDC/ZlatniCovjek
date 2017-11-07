@@ -1,4 +1,4 @@
-:tennis: :ski:
+:tennis: :ski: :online:
 
 * Java program - native to ZC (ZlatniCovjek)
 * NoteCreationService.apxc in Dev2
