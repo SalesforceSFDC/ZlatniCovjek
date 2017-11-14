@@ -21,6 +21,11 @@ public Note__c curNote{get;set;}
   
 public Task newTask{get;set;}
 public List<String> primMeansList{get;set;}
-public 
+public List<String> subjectList{get;set;}
+public List<String> taskStatusList{get;set;}
+public List<String> taskPriorList{get;set;}
+public String csoEmea{get;set;}
+public String csoAsia{get;set;}
+public String csoUS{get;set;}
   
 }
