@@ -83,3 +83,5 @@ Generally speaking we can say that all the styles will "cascade" into a new "vir
 3. Browser default
 
 So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or a browser default value.
+
+### Apex
