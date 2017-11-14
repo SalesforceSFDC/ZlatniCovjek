@@ -13,6 +13,6 @@ public String userPrimaryTeam{get;set;}
 public String subjectJson{get;set;}
 public String pwaProfileId{get;set;}
 public String noteId{get;set;}
-public String 
+public String noteHistId
   
 }
