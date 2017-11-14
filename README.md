@@ -5,9 +5,8 @@
 * [Console API](https://developer.mozilla.org/en-US/docs/Web/API/console)
 * [Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
 * [Comparing the contents of two files in Sublime Text](https://stackoverflow.com/questions/25874018/comparing-the-contents-of-two-files-in-sublime-text)
-* ```visualforce
-<c:MobileComponent />
-```
+```visualforce <c:MobileComponent />```
+
 ## CSS
 
 ### External Style Sheet
