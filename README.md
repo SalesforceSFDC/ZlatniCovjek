@@ -85,3 +85,4 @@ Generally speaking we can say that all the styles will "cascade" into a new "vir
 So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or a browser default value.
 
 ### Apex
+`get` and `set` are accessors, meaning they're able to access data and info in private fields (usually from a backing field) and usually do so from public properties
