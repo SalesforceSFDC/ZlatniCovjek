@@ -13,6 +13,14 @@ public String userPrimaryTeam{get;set;}
 public String subjectJson{get;set;}
 public String pwaProfileId{get;set;}
 public String noteId{get;set;}
-public String noteHistId
+public String noteHistId{get;set;}
+public String userLocale{get;set;}
+public String taskType{get;set;}
+
+public Note__c curNote{get;set;}
+  
+public Task newTask{get;set;}
+public List<String> primMeansList{get;set;}
+public 
   
 }
