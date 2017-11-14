@@ -28,4 +28,10 @@ public String csoEmea{get;set;}
 public String csoAsia{get;set;}
 public String csoUS{get;set;}
   
+public statis Savepoint saveRestore{get;set;}
+// @formatter:on
+public RelationshipNoteControllerV2() {
+  Apexpages.currentPage().getHeaders().put('X-UA-Compatible', 'IE=11');
+  noteId = Apexpages.currentPage()
+
 }
