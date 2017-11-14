@@ -9,5 +9,10 @@ public boolean isUser{get;set;}
 
 public String recordTypeId{get;set;}
 public String userRegion{get;set;}
-
+public String userPrimaryTeam{get;set;}
+public String subjectJson{get;set;}
+public String pwaProfileId{get;set;}
+public String noteId{get;set;}
+public String 
+  
 }
