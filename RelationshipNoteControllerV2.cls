@@ -7,6 +7,7 @@ public boolean isQA{get;set;}
 public boolean isProd{get;set;}
 public boolean isUser{get;set;}
 
-public String 
+public String recordTypeId{get;set;}
+public String userRegion{get;set;}
 
 }
