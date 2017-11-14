@@ -6,9 +6,9 @@
 * [Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
 * [Comparing the contents of two files in Sublime Text](https://stackoverflow.com/questions/25874018/comparing-the-contents-of-two-files-in-sublime-text)
 
-```visualforce 
-<c:MobileComponent />
-```
+`<c:MobileComponent />` - Custom Vf component written by Jim.  Its purpose is to hide all incompatible components from mobile version of notes and also to convert all UI elements to render properly in mobile.  In new notes it is not required as the new notes use responsive dash UI.
+
+
 
 ## CSS
 
