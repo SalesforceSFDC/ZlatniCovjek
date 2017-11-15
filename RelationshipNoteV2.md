@@ -7,3 +7,4 @@
 * src="/soap/ajax/38.0/apex.js" = AJAX toolkit
 * Viewport = user's visible area of the page
 * `<c:GsUIFix>` - 
+* 
