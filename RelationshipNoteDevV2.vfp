@@ -4,4 +4,5 @@
 </script>
 
 <div class="gs">
-  <div class="container-fluid container-default" id="main">
+  <div class="container-fluid container-default" id="main"> <!-- Bootstrap: div class https://getbootstrap.com/docs/3.3/css/-->
+    <div class="row">
