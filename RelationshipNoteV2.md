@@ -1,1 +1,3 @@
+* controller = RelationshipNoteControllerV2
+* 
 
