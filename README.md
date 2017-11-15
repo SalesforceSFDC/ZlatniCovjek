@@ -11,6 +11,7 @@
 `<c:GsUIFix />` - custom component that has to be used on any page that uses the new responsive UI.  The new UI messes up the top half of Salesforce page (the area where your name is written and org logo is present.  This component prevents that from happening.  This must be included in the new UI code.
 
 ## CSS
+*
 
 ### External Style Sheet
 ```css
