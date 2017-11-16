@@ -91,3 +91,5 @@ So, an inline style (inside a specific HTML element) has the highest priority, w
 
 ### Apex
 `get` and `set` are accessors, meaning they're able to access data and info in private fields (usually from a backing field) and usually do so from public properties
+
+### Workflow Rules
