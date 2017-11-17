@@ -22,4 +22,12 @@
 * Primary Account (Entity)
 * Note Primary Account
 * Notes
+###
+* Accounts
+* Related Primary Account
+* Primary Accounts
+###
+* DashUI
+* NoteWithRelatedListCX.cls
+* Static resources: summernote, NoteResources, GSAuth.
 
