@@ -31,4 +31,3 @@
 * DashUI
 * NoteWithRelatedListCX.cls
 * Static resources: summernote, NoteResources, GSAuth.
-###
