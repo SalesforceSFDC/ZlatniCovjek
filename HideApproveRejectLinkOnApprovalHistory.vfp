@@ -1,0 +1,15 @@
+<apex:page standardController="Custom_Object__c" sidebar="false" showHeader="false">
+<apex:includeScript value="{!URLFOR($Resource.jqueryui, 'js/jquery-1.3.2.min.js')}"/>
+
+<script>
+  $(document).ready(function(){
+              var test = $("tr.tertiaryPalette:first");
+                test.nextAll().find('a.actionLink[title*="Approve"]').css('display', 'none');
+                test.nextAll().find('span.actionLink').css('color', '#FFFFFF');
+                test.find('span.actionLink').css('color', '#FFFFFF');
+                $("tr.tertiaryPalette").css('background-color', '#b4c374');
+                $("tr.tertiaryPalette").css('border-color', '#b4c374');
+  });
+</script>
+  <apex:relatedList list="ProcessSteps" pageSize="100" />
+</apex:page>
