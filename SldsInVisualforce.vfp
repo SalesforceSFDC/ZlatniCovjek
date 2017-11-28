@@ -1,0 +1,67 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0" standardController="Account" applyBodyTag="False" applyHtmlTag="False">
+<head>
+  <title>{! Account.Name }</title>
+  <apex:slds /> 
+</head>
+
+<body class="slds-scope">
+    <!-- MASTHEAD -->
+    <p class="slds-text-heading--label slds-m-bottom--small">
+      Using the Lightning Design System in Visualforce
+    </p>
+    <!-- / MASTHEAD -->
+
+    <!-- PAGE HEADER -->
+    <div class="slds-page-header" role="banner">
+      <div class="slds-grid">
+        <div class="slds-col slds-has-flexi-truncate">
+          <!-- HEADING AREA -->
+            <p class="slds-text-title--caps slds-line-height--reset">Accounts</p>
+            <h1 class="slds-page-header__title slds-truncate" title="My Accounts">{! Account.Name }</h1>
+            <span class="slds-icon_container slds-icon--small slds-icon-standard-account" title="Account Standard Icon">
+                <img src="{!URLFOR($Asset.SLDS, 'assets/icons/standard/account_60.png')}" alt="Account Standard Icon" />
+            </span>
+          <!-- / HEADING AREA -->
+        </div>
+      <div class="slds-col slds-no-flex slds-grid slds-align-top">
+        <button class="slds-button slds-button--neutral">New Account</button>
+        </div>
+      </div>
+    </div>
+    <!-- / PAGE HEADER -->
+
+    <!-- ACCOUNT DETAIL CARD -->
+    <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap">
+      <div class="slds-form--stacked slds-grow slds-scrollable--y">
+
+        <div class="slds-panel__section">
+          <h3 class="slds-text-heading--small slds-m-bottom--medium">Account Detail</h3>
+          <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+            <span class="slds-form-element__label">Name</span>
+            <div class="slds-form-element__control">
+              <span class="slds-form-element__static">{! Account.Name }</span>
+            </div>
+          </div>
+          <div class="slds-form-element slds-hint-parent slds-has-divider--bottom">
+            <span class="slds-form-element__label">Phone</span>
+            <div class="slds-form-element__control">
+              <span class="slds-form-element__static">{! Account.Phone }</span>
+            </div>
+          </div>
+        </div>
+        <div class="slds-panel__section slds-has-divider--bottom">
+          <div class="slds-media">
+            <div class="slds-media__body">
+              <div class="slds-button-group slds-m-top--small" role="group">
+                <button class="slds-button slds-button--neutral slds-grow">Edit</button>
+                <button class="slds-button slds-button--neutral slds-grow">Save</button>
+                 <button class="slds-button slds-button--neutral slds-grow">New Account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / ACCOUNT DETAIL CARD -->
+</body>
+</apex:page>
