@@ -3,7 +3,7 @@
 * https://developer.salesforce.com/forums/?id=906F0000000AbeXIAS
   * override the detail pages approval history related list w/ a vf component or override the entire page w/ vf including a custom approval history related list (to hide the approve/reject link) which I'm working on now.
 #
-* The below implementation to hide Approve/Reject link can be a long term solution. 
+* implementation to hide Approve/Reject link
 
 1. Create visualforce page with relatedList ProcessSteps.
 2. jQuery is used to hide the Approve/Reject link on the approval history.
