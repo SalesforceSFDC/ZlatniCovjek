@@ -12,5 +12,4 @@
 
 * Go through the below link to see the code. 
 http://technicaladda.blogspot.com/2015/07/hide-approvereject-link-on-approval.html
-
 #
