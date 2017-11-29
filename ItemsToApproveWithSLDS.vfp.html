@@ -46,10 +46,13 @@
       <tbody>
         <apex:repeat value="{!listContactCards}" var="c">
           <tr class="slds-hint-parent">
-            <td class="slds-cell-shrink" data-table="Cintact Card Name">
+            <td class="slds-cell-shrink" data-table="Contact Card Name">
               <a href="javascript:gotoRecord('{!c.Account__r.Id}');">{!c.Account__r.Name}</a>              
             </td>
-            <td class="slds-hint-parent">
+            <td class="slds-cell-shrink" data-label="Record Type Name">
+              {!c.Record_Type_Name_String__c}
+            </td>
+            <td class="slds-cell-shrink" data-table="T-List Date">
               
             </td>
           </tr>          
