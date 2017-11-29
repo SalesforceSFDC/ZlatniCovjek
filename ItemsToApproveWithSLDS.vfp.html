@@ -7,7 +7,11 @@
       var index = navigator.appVersion.indexOf("Mobile");
       if (index > -1) {
         document.getElementById("linkcontainertop").style.display = "none";
-        document.getElementById("")
+        document.getElementById("linkcontainerbottom").style.display = "none";
+      
+      }else{
+        document.getElementById("linkcontainertop").style.display = "block";
+        document.getElementById("linkcontainerbottom").style.display = "block";
       }
       
     }
