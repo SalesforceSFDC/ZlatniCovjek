@@ -41,7 +41,7 @@
             </th>            
           </tr>
         </thead>
-      </table>
+      
       
       <tbody>
         <apex:repeat value="{!listContactCards}" var="c">
@@ -53,12 +53,23 @@
               {!c.Record_Type_Name_String__c}
             </td>
             <td class="slds-cell-shrink" data-table="T-List Date">
-              
+              <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                <apex:param value="{!c.T_List_Date__c}"/>
+              </apex:outputText>
+            </td>
+            <td class="slds-cell-shrink" data-label="Point Person">
+              {!c.Account__r.Owner.Name}
+            </td>
+            <td class="slds-cell-shrink" data-label="Toral # of slots">
+              {!c.Account__r.Total_of_slots_used__c}
             </td>
           </tr>          
         </apex:repeat>
       </tbody>
+     </table>
     </div>
+    
+    <div class="slds-col" id=""
       
   </div>
 </apex:page>
