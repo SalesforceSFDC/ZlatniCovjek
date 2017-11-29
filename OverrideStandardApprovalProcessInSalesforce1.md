@@ -20,7 +20,3 @@ Hide Approve/Reject Link
 2. jQuery is used to hide the Approve/Reject link on the approval history.
 3. Edit Layout -> Remove standard Approval History
 4. Edit Layout -> Select visualforce page created in step 1 and drag and drop on to HTML space of Page Layout.
-
-```Apex
-
-```
