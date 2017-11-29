@@ -16,7 +16,11 @@
     };
     
     function gotoRecord(recordId) {
-      if((typeof sforce != 'undefined') && sforce && )
+      if((typeof sforce != 'undefined') && sforce && (!!sforce.one)) {
+        sforce.one.navigateToSObject(recordId);
+      } else {
+        
+      }
     }
   </script>
 </apex:page>
