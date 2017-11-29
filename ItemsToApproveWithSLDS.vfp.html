@@ -70,7 +70,10 @@
     </div>
     
     <div class="slds-col" id="linkcontainerbottom">
-      
+      <apex:form>
+        <apex:commandLink value="Download to Excel" title="Download" id="theButton" action="{!downloadToExcel}" target="_blank"/>
+        &nbsp;&nbsp;&nbsp;
+      </apex:form>
     </div>
       
   </div>
