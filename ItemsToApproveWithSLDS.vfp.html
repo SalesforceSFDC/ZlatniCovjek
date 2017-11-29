@@ -19,7 +19,7 @@
       if((typeof sforce != 'undefined') && sforce && (!!sforce.one)) {
         sforce.one.navigateToSObject(recordId);
       } else {
-        
+        window.open('/' + recordId, '_blank');
       }
     }
   </script>
