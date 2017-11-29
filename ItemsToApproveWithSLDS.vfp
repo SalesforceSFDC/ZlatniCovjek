@@ -1,0 +1,2 @@
+<apex:page standardController="Team__c" sidebar="false"
+</apex:page>
