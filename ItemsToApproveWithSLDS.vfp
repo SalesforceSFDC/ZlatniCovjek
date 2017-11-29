@@ -3,6 +3,8 @@
   <apex:stylesheet value="{!URLFOR($Resource.SLDS0121, '/assets/styles/salesforce-lightning-design-system-vf.css')}"/>
   
   <script type="text/javascript">
-    
+    window.onload = function() {
+      var index = navigator.
+    }
   </script>
 </apex:page>
