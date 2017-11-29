@@ -47,6 +47,9 @@
         <apex:repeat value="{!listContactCards}" var="c">
           <tr class="slds-hint-parent">
             <td class="slds-cell-shrink" data-table="Cintact Card Name">
+              <a href="javascript:gotoRecord('{!c.Account__r.Id}');">{!c.Account__r.Name}</a>              
+            </td>
+            <td class="slds-hint-parent">
               
             </td>
           </tr>          
