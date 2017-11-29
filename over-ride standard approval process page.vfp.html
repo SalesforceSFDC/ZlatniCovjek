@@ -1,0 +1,33 @@
+<!--
+1. Create a custom visualforce page as a replica of standard approval/rejection page.
+2. Create a controller to have methods for approve/reject/cancel. Approval Process api is available in apex reference book.
+3. Create a home page component in which a java-script will be written to override  the "Approve/Reject" button on Lead.
+4. Add this home page component in home page layout.
+-->
+
+<apex:page controller="ProcessInstanceController" tabStyle="Lead">
+   <apex:form >
+   <apex:sectionHeader title="Lead" subtitle="{!objLead.Name}"/>
+   <apex:pageBlock title="Approve/Reject Approval Request">
+       <apex:pageBlockButtons location="bottom">
+           <apex:commandButton value="Approve" action="{!approve}"/>
+           <apex:commandButton value="Reject" action="{!reject}"/>
+           <apex:commandButton value="Cancel" action="{!cancel}"/>
+       </apex:pageBlockButtons>  
+       <apex:pageBlockSection columns="1">
+           <apex:pageBlockSectionItem >
+               Name <apex:outputField value="{!objLead.Name}"/>
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+               Lead Owner <apex:outputField value="{!objLead.Owner.Name}"/>
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+               Rejection Reason <font color="red">(Mandatory while Rejection)</font><apex:inputField value="{!objLead.Rejection_Reason__c}"/>
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+              Comments <font color="red">(Mandatory while Rejection)</font> <apex:inputTextArea value="{!objLead.Comments__c}" rows="5" cols="100"/>
+           </apex:pageBlockSectionItem>
+       </apex:pageBlockSection>
+   </apex:pageBlock>
+   </apex:form>
+</apex:page>
