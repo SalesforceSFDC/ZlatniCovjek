@@ -4,9 +4,13 @@
       <apex:pageBlockTable value="{!items_to_approve}" var="items_to_approve">
         <apex:column headerValue="Action">
           <!-- /p/process/ProcessInstanceWorkitemWizardStageManager?id=04iP0000000Qotl -->
-          <apex:outputLink target="_top" value={!IF(AND(isUserInNewNoteGroup), '/apex/NoteApprovalProcessPage', 
+          
+          <apex:outputLink target="_top" value="{!IF(AND(isUserInNewNoteGroup), '/apex/NoteApprovalProcessPage', 
                            '/p/process/ProcessInstanceWorkitemWizardStageManager'))?id={!item_to_approve.processid}&
-                           noteID=
+                           noteID={!item_to_approve.id}&notetype={!item_to_approve.notetype}"
+                           rendered="{!(item_to_approve.notetype == 'Relationship Note')}">Approve/Reject</apex:outputLink>
+          
+          <apex:outputLink target="_top" value=
           
         </apex:column>
       </apex:pageBlockTable>
