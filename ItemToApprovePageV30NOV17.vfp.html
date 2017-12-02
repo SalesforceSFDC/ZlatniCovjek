@@ -4,6 +4,9 @@
       <apex:pageBlockTable value="{!items_to_approve}" var="items_to_approve">
         <apex:column headerValue="Action">
           <!-- /p/process/ProcessInstanceWorkitemWizardStageManager?id=04iP0000000Qotl -->
+          <apex:outputLink target="_top" value={!IF(AND(isUserInNewNoteGroup), '/apex/NoteApprovalProcessPage', 
+                           '/p/process/ProcessInstanceWorkitemWizardStageManager'))?id={!item_to_approve.processid}&
+                           noteID=
           
         </apex:column>
       </apex:pageBlockTable>
