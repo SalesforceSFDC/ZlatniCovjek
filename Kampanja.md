@@ -5,6 +5,7 @@
 * Regular users see: Event List, Event, Other
 * Email List - no restrictions for campaigns
 ###
+#
 * 4 pages
 * 2 controllers
 * 2 objects
