@@ -16,8 +16,10 @@
                            rendered={!(item_to_approve.notetype == 'Investment Note')}">Approve/Reject</apex:outputLink>
         </apex:column>
         <apex:column headerValue="Subject">
-          
-        </apex:column>                                                                                       
+         <apex:outputLink target="_top" value="/{!item_to_approve.id}">{!item_to_approve.name}</apex:outputLink> 
+        </apex:column>
+         <apex:column headerValue="Submitted Date">
+         </apex:column>
       </apex:pageBlockTable>
     </apex:pageBlock>
   </apex:form>
