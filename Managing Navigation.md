@@ -15,3 +15,5 @@ Programmatic navigation for Visualforce pages generally works something like thi
 
 
 * sforce.one - utility Javascript object.  This object provides a number of functions that trigger navigation events when they run. To use these functions, you can call them directly from your page’s JavaScript code, or you can attach calls as click handlers to elements on the page.
+
+* the sforce object is injected onto pages only inside the app. 
