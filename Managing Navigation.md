@@ -11,3 +11,6 @@ Programmatic navigation for Visualforce pages generally works something like thi
 * The user submits the form, or performs some other action on the page that commits a change.
 * Controller or extension code runs, saving the changes to Salesforce, and returning the results of the action.
 * The Visualforce page, using JavaScript response handlers, receives the results of the action, and when successful, responds by redirecting the user to a new page that shows the results of their action.
+
+
+* sforce.one - utility Javascript object
