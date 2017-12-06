@@ -17,3 +17,17 @@ Programmatic navigation for Visualforce pages generally works something like thi
 * sforce.one - utility Javascript object.  This object provides a number of functions that trigger navigation events when they run. To use these functions, you can call them directly from your page’s JavaScript code, or you can attach calls as click handlers to elements on the page.
 
 * the sforce object is injected onto pages only inside the app. This means that, for pages shared between the Salesforce app and the full Salesforce site, you’ll want to write code that uses the sforce object when it’s available, and standard Visualforce navigation when it’s not.
+
+```apex
+// Go back to the Account detail page
+if( (typeof sforce != 'undefined') && sforce && (!!sforce.one) ) {
+    // Salesforce app navigation
+    sforce.one.navigateToSObject(aId);
+}
+else {
+    // Set the window's URL using a Visualforce expression
+    window.location.href = 
+        '{!URLFOR($Action.Account.View, account.Id)}';
+}
+
+```
