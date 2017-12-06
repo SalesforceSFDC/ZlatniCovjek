@@ -13,4 +13,4 @@ Programmatic navigation for Visualforce pages generally works something like thi
 * The Visualforce page, using JavaScript response handlers, receives the results of the action, and when successful, responds by redirecting the user to a new page that shows the results of their action.
 
 
-* sforce.one - utility Javascript object
+* sforce.one - utility Javascript object.  This object provides a number of functions that trigger navigation events when they run. To use these functions, you can call them directly from your page’s JavaScript code, or you can attach calls as click handlers to elements on the page.
