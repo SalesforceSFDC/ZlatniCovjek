@@ -1,0 +1,31 @@
+<apex:page controller="ItemsToApprovePage">
+  <apex:form >
+    <apex:pageBlock title="Items To Approve">
+      <apex:pageBlockTable value="{!items_to_approve}" var="items_to_approve">
+        <apex:column headerValue="Action">
+          <!-- /p/process/ProcessInstanceWorkitemWizardStageManager?id=04iP0000000Qotl -->
+          
+          <apex:outputLink target="_top" value="{!IF(AND(isUserInNewNoteGroup), '/apex/NoteApprovalProcessPage', 
+                           '/p/process/ProcessInstanceWorkitemWizardStageManager'))?id={!item_to_approve.processid}&
+                           noteID={!item_to_approve.id}&notetype={!item_to_approve.notetype}"
+                           rendered="{!(item_to_approve.notetype == 'Relationship Note')}">Approve/Reject</apex:outputLink>
+          
+          <apex:outputLink target="_top" value="{!IF(AND(isUserInNewNoteGroup, item_to_approve.noteV2), 
+                           '/apex/InvestmentNoteApproval', '/p/process/ProcessInstanceWorkitemWizardStageManager')}?id=
+                           {!item_to_approve.processid}&noteID={!item_to_approve.id}&notetype={!item_to_approve.notetype}"
+                           rendered={!(item_to_approve.notetype == 'Investment Note')}">Approve/Reject</apex:outputLink>
+        </apex:column>
+        <apex:column headerValue="Subject">
+         <apex:outputLink target="_top" value="/{!item_to_approve.id}">{!item_to_approve.name}</apex:outputLink> 
+        </apex:column>
+         <apex:column headerValue="Submitted Date">
+           <apex:param value="{!item_to_approve.submitteddate}" />
+         </apex:column>
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+    <br/>
+    <br/>
+    <br/>
+  </apex:form>
+</apex:page>
+
