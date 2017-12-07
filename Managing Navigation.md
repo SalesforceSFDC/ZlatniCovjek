@@ -34,3 +34,5 @@ else {
 
 ## Visualforce Page Navigation
 
+* Action methods return a PageReference object with the details of where the user is to be navigated to, and then the Visualforce framework handles the details of sending the right response back to the user’s browser. 
+* 
