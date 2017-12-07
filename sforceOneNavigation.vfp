@@ -1,0 +1,30 @@
+<apex:page showheader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false">
+  <html>
+    <head>
+    <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"></meta>
+    </head>
+    <body>
+      <apex:includeScript value="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"/>
+      <p style="font-size:24px; text-align:center">Page 1</p>
+      <div style="display:none" id="sf1">
+        <p style="font-size:20px; text-align:center">I am running in Salesforce1 :)</p>
+      </div>
+      <div style="display:none" id="notsf1">
+        <p style="font-size:20px; text-align:center">I am not running in Salesforce1 :(</p>
+      </div>
+    
+    
+      <p><a href="javascript:sforce.one.navigateToURL('/apex/SforceDotTwo');">Click to open page two.</a></p>
+      <script>
+      $(document).ready(function () {
+        if ( (typeof sforce != 'undefined') && (sforce != null) ) {
+            $('#sf1').toggle();
+        }
+        else {
+            $('#notsf1').toggle();
+        }
+      });
+       </script>
+    </body>
+  </html>
+</apex:page>
