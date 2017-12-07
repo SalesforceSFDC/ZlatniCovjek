@@ -37,3 +37,6 @@ else {
 * Action methods return a `PageReference` object with the details of where the user is to be navigated to, and then the Visualforce framework handles the details of sending the right response back to the user’s browser. 
 * Standard Controller returns a `PageReference` from its action methods. So, your existing navigation, whether you’re using the Standard Controller or your own custom controller code, continues to work as you expect.
 * `PageReference` is on the server-side.
+
+## Lightning Experience Page Navigation
+* Lightning Experience manages navigation using events. The navigation event framework is made available as a JavaScript utility object that provides a number of functions.
