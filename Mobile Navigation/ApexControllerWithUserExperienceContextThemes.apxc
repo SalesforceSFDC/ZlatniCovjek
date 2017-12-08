@@ -26,4 +26,4 @@
     <p>
         Value of $User.UIThemeDisplayed: {! $User.UIThemeDisplayed }
     </p>
-</apex:page>
+</apex:page>                    
