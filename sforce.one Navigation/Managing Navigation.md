@@ -47,13 +47,13 @@ else {
 * `$User.UIThemeDisplayed` returns the look and feel the user actually sees
 
 The possible values for `$User.UITheme` and `$User.UIThemeDisplayed` are the same:
-* Theme1—Obsolete Salesforce theme
-* Theme2—Salesforce Classic 2005 user interface theme
-* Theme3—Salesforce Classic 2010 user interface theme
-* Theme4d—Modern “Lightning Experience” Salesforce theme
-* Theme4t—Salesforce mobile app Salesforce theme
-* PortalDefault—Salesforce Customer Portal theme
-* Webstore—Salesforce AppExchange theme
+* `Theme1`—Obsolete Salesforce theme
+* `Theme2`—Salesforce Classic 2005 user interface theme
+* `Theme3`—Salesforce Classic 2010 user interface theme
+* `Theme4d`—Modern “Lightning Experience” Salesforce theme
+* `Theme4t`—Salesforce mobile app Salesforce theme
+* `PortalDefault`—Salesforce Customer Portal theme
+* `Webstore`—Salesforce AppExchange theme
 
 ```Apex
 <apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme3' }">
