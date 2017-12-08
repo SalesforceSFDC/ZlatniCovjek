@@ -86,3 +86,31 @@ else {
     </p>
 </apex:page>
 ```
+
+Page that does nothing but inject the $User.UIThemeDisplayed value into the right JavaScript context, and then using <apex:include> to add it to a page. Then we can test against the injected value in our actual utility code.
+
+Here’s the “shim” Visualforce page that we use to inject the $User.UIThemeDisplayed global variable into a JavaScript context, as well as include the JavaScript utility static resource that uses it.
+
+```Apex
+<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false"
+           showHeader="false" standardStylesheets="false">
+
+<!-- UIUTILS SCRIPT -->
+<apex:includeScript value="{!URLFOR($Resource.ForceUI)}"/>
+<!-- UIUTILS SCRIPT -->
+
+<!-- UITHEME INJECTOR -->
+<script type="text/javascript">
+    (function(myContext){
+        // Don't overwrite ourself if we already exist.
+        myContext.ForceUI = myContext.ForceUI || {};
+        
+        // Because this is Visualforce, not a static resource,
+        // we can access a global variable in an expression.
+        myContext.ForceUI.UserUITheme = '{! $User.UIThemeDisplayed }';
+    })(this);
+</script>
+<!-- UITHEME INJECTOR -->
+
+</apex:page>
+```
