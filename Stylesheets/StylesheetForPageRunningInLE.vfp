@@ -1,0 +1,14 @@
+<apex:page standardController="Account">
+
+    <!-- Base styles -->
+    <apex:stylesheet value="{!URLFOR($Resource.AppStyles, 'app-styles.css')}" />
+    
+    <!-- Lightning Desktop extra styles -->
+    <apex:variable var="uiTheme" value="lightningDesktop" 
+        rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
+        <apex:stylesheet value="{!URLFOR($Resource.AppStyles, 'lightning-styling.css')}" />
+    </apex:variable>
+
+    <!-- Rest of your page -->
+    
+</apex:page>
