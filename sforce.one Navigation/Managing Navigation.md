@@ -91,6 +91,8 @@ Page that does nothing but inject the `$User.UIThemeDisplayed` value into the ri
 
 Here’s the “shim” Visualforce page that we use to inject the `$User.UIThemeDisplayed` global variable into a JavaScript context, as well as include the JavaScript utility static resource that uses it.
 
+This page does two things. First, it pulls in the JavaScript static resource that contains the actual utility method code. (Which, I promise, we will get to.) Second, it has an inline JavaScript that, because it’s running in a Visualforce page instead of a static resource, can evaluate an expression with the theme global. This script sets a variable inside the ForceUI utility object. This copies the theme value from Visualforce into JavaScript, so that it can be referenced by the JavaScript code that’s in the static resource.
+
 ```Apex
 <apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false"
            showHeader="false" standardStylesheets="false">
