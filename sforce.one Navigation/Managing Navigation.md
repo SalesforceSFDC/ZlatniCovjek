@@ -87,9 +87,9 @@ else {
 </apex:page>
 ```
 
-Page that does nothing but inject the $User.UIThemeDisplayed value into the right JavaScript context, and then using <apex:include> to add it to a page. Then we can test against the injected value in our actual utility code.
+Page that does nothing but inject the `$User.UIThemeDisplayed` value into the right JavaScript context, and then using `<apex:include>` to add it to a page. Then we can test against the injected value in our actual utility code.
 
-Here’s the “shim” Visualforce page that we use to inject the $User.UIThemeDisplayed global variable into a JavaScript context, as well as include the JavaScript utility static resource that uses it.
+Here’s the “shim” Visualforce page that we use to inject the `$User.UIThemeDisplayed` global variable into a JavaScript context, as well as include the JavaScript utility static resource that uses it.
 
 ```Apex
 <apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false"
