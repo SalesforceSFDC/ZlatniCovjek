@@ -116,3 +116,5 @@ This page does two things. First, it pulls in the JavaScript static resource tha
 
 </apex:page>
 ```
+#
+Page that shows how to add the JavaScript utility methods to the page, using the <apex:include> component within the <head> block. At the bottom of the page is a short bit of JavaScript that illustrates how to use the utility methods from within JavaScript. 
