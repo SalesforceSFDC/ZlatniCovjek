@@ -118,3 +118,60 @@ This page does two things. First, it pulls in the JavaScript static resource tha
 ```
 #
 Page that shows how to add the JavaScript utility methods to the page, using the <apex:include> component within the <head> block. At the bottom of the page is a short bit of JavaScript that illustrates how to use the utility methods from within JavaScript. 
+
+```Apex
+<apex:page standardController="Account" extensions="ForceUIExtension"
+           showHeader="false" standardStylesheets="false"
+           applyHtmlTag="false" applyBodyTag="false"
+           docType="html-5.0" title="ForceUI Utilities">
+
+<html lang="en">
+  <head>
+    <title>ForceUI Utilities</title>
+    <apex:include pageName="UIThemeUtilsInclude"/>
+  </head>
+
+  <body>
+      
+    <h1>ForceUI Utilities</h1>
+    
+    <p>This is a page used for testing different ways of determining 
+       the user interface context in which it's being displayed.</p>
+    
+    <h2>$User.UITheme Global Variable</h2>
+    
+    <p><label>$User.UITheme</label>: {! $User.UITheme }</p>
+    <p><label>$User.UIThemeDisplayed</label>: {! $User.UIThemeDisplayed }</p>
+    
+    
+    <h2>UIUtils JavaScript</h2>
+    
+    <p><label>ForceUI.UserUITheme</label>: 
+       <span id="UserUIThemeJS">(loading...)</span></p>
+      
+    <p><label>isSalesforce1()</label>: 
+       <span id="isSalesforce1JS">(loading...)</span></p>
+      
+    <p><label>isLightningExperience()</label>: 
+       <span id="isLightningExperienceJS">(loading...)</span></p>
+      
+    <p><label>isSalesforceClassic()</label>: 
+       <span id="isSalesforceClassicJS">(loading...)</span></p>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function(event){
+          // Diagnostic only -- don't use this value directly
+          document.getElementById('UserUIThemeJS').innerHTML = ForceUI.UserUITheme;
+          // Instead, use these utility methods
+          document.getElementById('isSalesforce1JS').innerHTML = 
+              ForceUI.isSalesforce1();
+          document.getElementById('isLightningExperienceJS').innerHTML = 
+              ForceUI.isLightningExperience();
+          document.getElementById('isSalesforceClassicJS').innerHTML = 
+              ForceUI.isSalesforceClassic();
+      });
+    </script>
+  </body>
+</html>
+</apex:page>    
+```
