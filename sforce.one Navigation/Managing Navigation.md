@@ -45,3 +45,13 @@ else {
 ## Share Visualforce Pages Between Classic and Lightning Experience 
 * `$User.UITheme` returns the look and feel the user is supposed to see
 * `$User.UIThemeDisplayed` returns the look and feel the user actually sees
+
+```Apex
+<apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme3' }">
+    <apex:outputText value="This is Salesforce Classic."/>
+    <apex:outputText value="These are multiple components wrapped by an outputPanel."/>
+</apex:outputPanel>
+<apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme4d' }">
+    <apex:outputText value="Everything is simpler in Lightning Experience."/>
+</apex:outputPanel>
+```
