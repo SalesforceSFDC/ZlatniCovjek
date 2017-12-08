@@ -55,3 +55,34 @@ else {
     <apex:outputText value="Everything is simpler in Lightning Experience."/>
 </apex:outputPanel>
 ```
+```Apex
+<apex:page standardController="Account">
+
+    <!-- Salesforce Classic "Aloha" theme -->
+    <apex:variable var="uiTheme" value="classic2010Theme" 
+        rendered="{!$User.UIThemeDisplayed == 'Theme3'}">
+        <apex:stylesheet value="{!URLFOR($Resource.AppStyles, 
+                                         'classic-styling.css')}" />
+    </apex:variable>
+    
+    <!-- Lightning Desktop theme -->
+    <apex:variable var="uiTheme" value="lightningDesktop" 
+        rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
+        <apex:stylesheet value="{!URLFOR($Resource.AppStyles, 
+                                         'lightning-styling.css')}" />
+    </apex:variable>
+    
+    <!-- Salesforce mobile theme -->
+    <apex:variable var="uiTheme" value="Salesforce1" 
+        rendered="{!$User.UIThemeDisplayed == 'Theme4t'}">
+        <apex:stylesheet value="{!URLFOR($Resource.AppStyles, 
+                                         'mobile-styling.css')}" />
+    </apex:variable>
+
+    <!-- Rest of your page -->
+    
+    <p>
+        Value of $User.UIThemeDisplayed: {! $User.UIThemeDisplayed }
+    </p>
+</apex:page>
+```
