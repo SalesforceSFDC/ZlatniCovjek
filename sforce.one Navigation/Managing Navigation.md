@@ -178,6 +178,8 @@ Page that shows how to add the JavaScript utility methods to the page, using the
 #
 The utility library that contains the JavaScript utility functions that let you create if expressions to conditionally affect the results of your app’s JavaScript code based on the user interface context it’s running in.
 
+The result of the code executing is a utility object, ForceUI, added to the global scope of your page. The object receives, from the injector JavaScript in the earlier Visualforce shim page, the value of the $User.UIThemeDisplayed global variable. This value is saved in a local variable named UserUITheme, which you should treat as a private implementation detail. 
+
 ```Apex 
 // This is an anonymous self-executing function closure thingie,
 // like all the cool kids are using these days.
