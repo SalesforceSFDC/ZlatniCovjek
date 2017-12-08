@@ -41,3 +41,7 @@ else {
 ## Lightning Experience Page Navigation
 * Lightning Experience manages navigation using events. The navigation event framework is made available as a JavaScript utility object that provides a number of functions.
 * `sforce.one` object is automatically added to Visualforce pages when they run in Lightning Experience. This object provides a number of functions that trigger navigation events when the functions are called. To use these functions, you can call them directly from your page’s JavaScript code, or you can attach calls as click (or other) handlers to elements on the page.
+
+## Share Visualforce Pages Between Classic and Lightning Experience 
+* `$User.UITheme` returns the look and feel the user is supposed to see
+* `$User.UIThemeDisplayed` returns the look and feel the user actually sees
