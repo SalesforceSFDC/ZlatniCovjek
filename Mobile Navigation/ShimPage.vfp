@@ -1,0 +1,21 @@
+<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false"
+           showHeader="false" standardStylesheets="false">
+
+<!-- UIUTILS SCRIPT -->
+<apex:includeScript value="{!URLFOR($Resource.ForceUI)}"/>
+<!-- UIUTILS SCRIPT -->
+
+<!-- UITHEME INJECTOR -->
+<script type="text/javascript">
+    (function(myContext){
+        // Don't overwrite ourself if we already exist.
+        myContext.ForceUI = myContext.ForceUI || {};
+        
+        // Because this is Visualforce, not a static resource,
+        // we can access a global variable in an expression.
+        myContext.ForceUI.UserUITheme = '{! $User.UIThemeDisplayed }';
+    })(this);
+</script>
+<!-- UITHEME INJECTOR -->
+
+</apex:page>
