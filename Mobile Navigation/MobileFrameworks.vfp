@@ -64,7 +64,10 @@
     <!-- / REQUIRED SLDS WRAPPER -->
 
     <!-- JAVASCRIPT -->
-          <!-- / JAVASCRIPT -->
+    <script>
+      angular.module('MobileFrameworksApp', []);
+    </script>
+    <!-- / JAVASCRIPT -->
     </body>
   </html>
 </apex:page>
