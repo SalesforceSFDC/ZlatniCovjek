@@ -19,7 +19,45 @@
       <div class="slds-scope">
                             
       <!-- PRIMARY CONTENT WRAPPER -->
+        <div class="myapp">
+<!-- HEADING -->
+  <div class="slds-text-heading_small slds-p-top_medium slds-p-bottom_medium">Virtual Business Card Template</div>
+<!-- / HEADING -->
 
+<!-- INPUT FIELDS -->
+  <div class="slds-col slds-size--1-of-2 slds-small-size--1-of-6 slds-medium-size--1-of-6" >
+    <input type="text" ng-model="yourName" placeholder="Name:" class="slds-input"/>
+    <input type="text" ng-model="yourCompany" placeholder="Company Name:" class="slds-input"/>
+    <input type="tel" ng-model="yourNumber" placeholder="Phone Number:" class="slds-input"/>
+    <input type="email" ng-model="yourEmail" placeholder="Email:" class="slds-input"/>
+  </div>
+<!-- / INPUT FIELDS -->
+
+<!-- BUSINESS CARD -->
+  <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-3 slds-medium-size--1-of-3" >
+    <div class="slds-box slds-m-top_x-large">
+
+      <div class="slds-text-heading_large slds-text-align_center">{{ yourName }}</div>
+      <div class="slds-text-heading--medium slds-text-align_center">{{ yourCompany }}</div>
+
+      <!-- ICON -->
+        <div class="slds-align_absolute-center">
+          <span class="slds-icon_container slds-icon-standard-avatar
+                       slds-icon-align_center slds-m-bottom_small slds-m-top_small">
+            <svg aria-hidden="true" class="slds-icon">
+              <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#avatar')}"></use>
+            </svg>
+          </span>
+        </div>                    
+      <!-- / ICON -->
+
+      <div class="slds-text-body_regular slds-text-align_center">{{ yourNumber }}</div>
+      <div class="slds-text-body_regular slds-text-align_center">{{ yourEmail }}</div>
+    </div>
+  </div>
+
+<!-- / BUSINESS CARD -->
+</div>    
       <!-- / PRIMARY CONTENT WRAPPER -->
 
     </div>
