@@ -1,0 +1,32 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false"
+      applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ng-app="MobileFrameworksApp">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>SLDS Visualforce Page in Salesforce Mobile</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+      <!-- Import the Design System style sheet -->
+        <apex:slds />
+    </head>
+
+    <body>
+    <!-- REQUIRED SLDS WRAPPER -->
+      <div class="slds-scope">
+                            
+      <!-- PRIMARY CONTENT WRAPPER -->
+
+      <!-- / PRIMARY CONTENT WRAPPER -->
+
+    </div>
+    <!-- / REQUIRED SLDS WRAPPER -->
+
+    <!-- JAVASCRIPT -->
+          <!-- / JAVASCRIPT -->
+    </body>
+  </html>
+</apex:page>
