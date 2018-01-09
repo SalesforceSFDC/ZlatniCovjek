@@ -27,6 +27,9 @@ account.retrieve(
         }
     }
 );
+ul.addEventListener("click", function(e) {
+    sforce.one.navigateToSObject(e.target.getAttribute("data-id"));
+});
 </script>
     
 </apex:page>
