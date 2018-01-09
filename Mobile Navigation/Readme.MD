@@ -1,3 +1,5 @@
+* https://resources.docs.salesforce.com/206/latest/en-us/sfdc/pdf/salesforce1_url_schemes.pdf
+#
 * SLDS - Salesforce Lightning Design System - CSS framework.
 * Lightning Component Framework - UI framework for developing dynamic single-page applications. 
 
