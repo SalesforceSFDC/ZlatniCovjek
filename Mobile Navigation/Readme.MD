@@ -22,3 +22,4 @@ Second, Remote Objects is JavaScript-based. This makes it natural to use with a 
 ### JavaScript Remoting
 
 JavaScript Remoting is, as you can probably guess from the name, also based in JavaScript. However, where Remote Objects is simple and straightforward, JavaScript Remoting is flexible and powerful. JavaScript Remoting gives you the most capability to create exactly the app experience you want to deliver, and to provide the best performance for those apps. But to do so, you’ll write more code yourself, and you’ll need to master some complex concepts.
+
